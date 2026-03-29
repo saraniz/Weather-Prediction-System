@@ -29,6 +29,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Run tests
+        run: python src/tests.py
+
       - name: Run Traning Script
         run: python src/train.py
 
