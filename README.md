@@ -1,4 +1,4 @@
-# Weather Prediction System
+# Weather Prediction System 🌦️
 
 Live App: https://weather-prediction--system.streamlit.app/
 
