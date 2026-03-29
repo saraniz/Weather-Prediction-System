@@ -201,4 +201,5 @@ streamlit run app.py
 ## Author Note
 
 This project represents my transition from model-centric learning to full MLOps thinking.
-It is not only about predicting weather, but about learning how to build reliable ML systems end to end.
+This is a learning project, so it may contain mistakes and prediction errors.
+It is built for practice and experimentation, not for highly reliable real-world weather forecasting.

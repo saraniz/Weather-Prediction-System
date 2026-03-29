@@ -11,6 +11,10 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - README.md
+      - docs/**
+      - .github/README.md
 
   workflow_dispatch: #manal trigger
 
