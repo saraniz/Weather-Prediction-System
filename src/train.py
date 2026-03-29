@@ -8,7 +8,9 @@ import joblib
 import os
 
 MODEL_PATH = "../models"
-DATA_PATH = '../data/raw/weather_clean.csv'
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(BASE_DIR, "..", "data", "raw", "weather_clean.csv")
 
 # targets we want to predict
 TARGETS = ["temperature", "humidity", "pressure", "rain_probability"]
