@@ -36,6 +36,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Fetch Latest Weather Data
+        run: python src/fetch_data.py
+
+      - name: Run ETL Pipeline
+        run: python src/etl.py
+
       - name: Run tests
         run: python src/tests.py
 
