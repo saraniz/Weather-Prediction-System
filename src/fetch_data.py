@@ -2,11 +2,19 @@ import requests
 import pandas as pd
 import os
 from datetime import datetime
-from dotenv import load_dotenv
 
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+except ImportError:
+    load_dotenv = None
+
+if load_dotenv:
+    load_dotenv()
 
 API_KEY = os.getenv("API_KEY")
+
+if not API_KEY:
+    raise ValueError("API_KEY is not set. Add it to your environment variables or .env file.")
 
 CITIES = {
     "Colombo": {"lat": 6.9271, "lon": 79.8612},
