@@ -1,12 +1,11 @@
-numpy
+streamlit==1.32.0
 pandas
+numpy
 scikit-learn
 xgboost
 joblib
 requests
 python-dateutil
-
-streamlit
-
 matplotlib
 seaborn
+altair
