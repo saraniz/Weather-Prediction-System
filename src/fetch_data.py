@@ -2,12 +2,11 @@ import requests
 import pandas as pd
 import os
 from datetime import datetime
+from dotenv import load_dotenv
 
-# ==============================
-# CONFIG
-# ==============================
+load_dotenv()
 
-API_KEY = "18d72659c9873b0a6465c49d14d91e90"
+API_KEY = os.getenv("API_KEY")
 
 CITIES = {
     "Colombo": {"lat": 6.9271, "lon": 79.8612},

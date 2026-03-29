@@ -4,7 +4,11 @@ import joblib
 import os
 import requests
 from datetime import datetime, timedelta
+from dotenv import load_dotenv
 
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
 
 st.set_page_config(
     page_title="Weather Forecast Dashboard",
@@ -12,7 +16,6 @@ st.set_page_config(
     layout="wide",
 )
 
-API_KEY = "18d72659c9873b0a6465c49d14d91e90"
 
 CITIES = {
     "Colombo": {"lat": 6.9271, "lon": 79.8612},
